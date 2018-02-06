@@ -1,0 +1,12 @@
+{application, dbgtracer,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, [dbgtracer_engine, dbgtracer_sup, dbgtracer_stats]},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { dbgtracer_app, []}},
+  {env, []}
+ ]}.
